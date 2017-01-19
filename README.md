@@ -1,10 +1,12 @@
-# mysql-001-iniciando-consultas
+﻿# mysql-001-iniciando-consultas
 
 Lista de comandos básicos: 
 - mysql -uroot -p
   - Acessar o MySQL
 - create database controle_compras;
   - Criar um banco de dados
+- show tables;
+  - Exibir tabelas
 - use controle_compras;
   - Acessar o banco
 - create table COMPRAS (id int auto_increment primary key, valor double, data date, observacoes varchar(255), recebido boolean);
@@ -23,3 +25,9 @@ Lista de comandos básicos:
   - Busca especificas
 - SELECT * FROM COMPRAS WHERE OBSERVACOES LIKE 'COMPRAS%';
   - busca para buscar apenas uma parte de campos text
+- UPDADE compras set valor = 5 where id = 20;
+  - Atulizar dados
+- delete from compras where data between '2009-03-05' and '2009-03-20';
+  - Deletar registros
+- select * from where not valor = 108;
+  - Operador NOT para negação
