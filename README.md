@@ -31,3 +31,11 @@ Lista de comandos básicos:
   - Deletar registros
 - select * from where not valor = 108;
   - Operador NOT para negação
+- desc compras;
+  - describe table
+- alter table compras modify observacoes varchar(255) not null;
+  - altera a estrutura da tabela
+- alter table compras modify recebido tinyint(1) default '1';
+  - default
+- alter table compras add column forma_pagt enum('cartao', 'boleto', 'dinheiro')
+  - select
