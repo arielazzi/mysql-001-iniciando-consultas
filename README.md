@@ -38,4 +38,4 @@ Lista de comandos básicos:
 - alter table compras modify recebido tinyint(1) default '1';
   - default
 - alter table compras add column forma_pagt enum('cartao', 'boleto', 'dinheiro')
-  - select
+  - aceita somente os paramentros passados
