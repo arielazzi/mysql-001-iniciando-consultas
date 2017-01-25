@@ -39,3 +39,19 @@ Lista de comandos básicos:
   - default
 - alter table compras add column forma_pagt enum('cartao', 'boleto', 'dinheiro')
   - aceita somente os paramentros passados
+
+CREATE TABLE FUNCIONARIOS (
+            NOME VARCHAR(100) NOT NULL,
+            CARGO ENUM('DIRETOR', 'FUNCIONARIO') NOT NULL,
+            SALARIO DECIMAL(10,2) DEFAULT '10000'
+        )
+
+CREATE TABLE compras (
+          id int NOT NULL AUTO_INCREMENT,
+          valor double,
+          data datetime,
+          observacoes text NOT NULL,
+          recebido tinyint(1) DEFAULT 1,
+          forma_pagto ENUM('DINHEIRO', 'CARTAO', 'BOLETO'),
+          PRIMARY KEY (id)
+        )
