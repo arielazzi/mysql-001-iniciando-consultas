@@ -55,3 +55,15 @@ CREATE TABLE compras (
           forma_pagto ENUM('DINHEIRO', 'CARTAO', 'BOLETO'),
           PRIMARY KEY (id)
         )
+
+ - select sum(valor)
+- soma os valores
+ - select count(valor)
+- contador
+ - group by 
+	- agrupamento
+
+- select month(data), year(data), sum(valor) from compras group by month(data),year(data)
+
+-media
+- select month(data), year(data), avg(valor) from compras group by month(data),year(data)
