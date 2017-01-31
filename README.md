@@ -8,7 +8,7 @@ Lista de comandos básicos:
 - show tables;
   - Exibir tabelas
 - use controle_compras;
-  - Acessar o banco
+  - Acessar o banco 
 - create table COMPRAS (id int auto_increment primary key, valor double, data date, observacoes varchar(255), recebido boolean);
   - Criar uma tabela
 - INSERT INTO COMPRAS (VALOR, DATA, OBSERVACOES, RECEBIDO) VALUES (100.0, '2007-05-12', 'COMPRAS DE MAIO', 1);
@@ -67,3 +67,5 @@ CREATE TABLE compras (
 
 -media
 - select month(data), year(data), avg(valor) from compras group by month(data),year(data)
+
+s
