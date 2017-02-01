@@ -54,7 +54,7 @@ CREATE TABLE compras (
           recebido tinyint(1) DEFAULT 1,
           forma_pagto ENUM('DINHEIRO', 'CARTAO', 'BOLETO'),
           PRIMARY KEY (id)
-        )
+        );
 
  - select sum(valor)
 - soma os valores
