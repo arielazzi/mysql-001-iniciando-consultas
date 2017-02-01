@@ -63,7 +63,7 @@ CREATE TABLE compras (
  - group by 
 	- agrupamento
 
-- select month(data), year(data), sum(valor) from compras group by month(data),year(data)
+- select month(data), year(data), sum(valor) from compras group by month(data),year(data);
 
 -media
-- select month(data), year(data), avg(valor) from compras group by month(data),year(data)
+- select month(data), year(data), avg(valor) from compras group by month(data),year(data);
