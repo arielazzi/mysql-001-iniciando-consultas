@@ -67,5 +67,3 @@ CREATE TABLE compras (
 
 -media
 - select month(data), year(data), avg(valor) from compras group by month(data),year(data)
-
-s
